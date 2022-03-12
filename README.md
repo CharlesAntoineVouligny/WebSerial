@@ -12,7 +12,7 @@ The objectives are :
 
  Textbox for instruction and a button to send
 
- Small terminal window (only 1 line)
+ Simple terminal window
 
 If you know how to approach this, help would really be appreciated!
 
