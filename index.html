@@ -7,19 +7,11 @@
     <title>Web Serial</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <!-- Display a warning if the browser is unsupported -->
-    <label id="warningLabel"></label>
-    <div class="dropdown">
-        <button class="dropbtn">Baud Rate</button>
-        <div class="dropdown-content">
-          <a href="#">9600</a>
-          <a href="#">115 200</a>
-          <a href="#">TODO: Textbox for custom baud rate</a>
-        </div>
-      </div>
-
-    <button class="button connectButton" onclick="connect()" id="button">Connect</button>
+<body class="body">
+    <footer>
+      <button class="button connectButton" onclick="connect()" id="button">Connect</button>
+    </footer>
+    
 
     <script src="index.js"></script>
 </body>
