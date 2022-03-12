@@ -13,6 +13,11 @@ The objectives are :
  Textbox for instruction and a button to send
 
  Simple terminal window
+ 
+ The overall interface would be cool if it looked something like this :
+ 
+ ![20220311_231336](https://user-images.githubusercontent.com/81876951/158003290-6d61c6a6-69bb-4007-942c-504f292f0b50.jpg)
+
 
 If you know how to approach this, help would really be appreciated!
 
