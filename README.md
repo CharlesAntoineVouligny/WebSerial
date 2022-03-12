@@ -29,3 +29,5 @@ https://github.com/UnJavaScripter/web-serial-example
 https://web.dev/serial/
 
 https://dev.to/unjavascripter/the-amazing-powers-of-the-web-web-serial-api-3ilc
+
+https://github.com/rafaelaroca/web-serial-terminal
