@@ -25,3 +25,5 @@ These are the links I found, but they are above my skill level right now, maybe 
 https://wicg.github.io/serial/#extensions-to-the-navigator-interface
 
 https://github.com/UnJavaScripter/web-serial-example
+
+https://web.dev/serial/
