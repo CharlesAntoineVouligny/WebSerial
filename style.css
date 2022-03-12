@@ -1,17 +1,21 @@
 .button {
     border: none;
     color: white;
-    padding: 16px 32px;
+    padding: 1em;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
     margin: 4px 2px;
-    transition-duration: 0.4s;
+    border-radius: 10px;
+    transition-duration: 0.1s;
     cursor: pointer;
     position: fixed;
-    right: 10px;
-    bottom: 10px;
+    right: 1em;
+    bottom: 1em;
+    width: 150px;
+    height: 80px;
+    margin: 10px;
   }
   
   .connectButton {
@@ -29,4 +33,37 @@
     color : #222;
     background: #222;
 
+  }
+
+  .writeBox {
+    position: absolute;
+    bottom: 1em;
+    right: 180px;
+    padding: 1em;
+    border-radius: 10px;
+    background-color: #222;
+    color: white;
+    border: 2 px solid transparent;
+    outline: none;
+    font-family: 'Heebo', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    transition: all 0.1s;
+    resize: none;
+    width: 75%;
+    height: 45px;
+    margin: 10px;
+    text-align: right;
+    vertical-align: center;
+  }
+
+  .writeBox:hover {
+    cursor: pointer;
+    background-color: #333;
+  }
+  .writeBox:focus {
+    cursor: text;
+    color: white;
+    background-color: #333;
+    border-color: white;
   }
