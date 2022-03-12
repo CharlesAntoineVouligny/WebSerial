@@ -27,3 +27,5 @@ https://wicg.github.io/serial/#extensions-to-the-navigator-interface
 https://github.com/UnJavaScripter/web-serial-example
 
 https://web.dev/serial/
+
+https://dev.to/unjavascripter/the-amazing-powers-of-the-web-web-serial-api-3ilc
