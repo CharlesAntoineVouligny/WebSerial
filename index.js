@@ -7,6 +7,7 @@ if ("serial" in navigator) {
 }
 
 var port, textEncoder, writableStreamClosed, writer;
+let connectedFlag = false;
 
   async function connectSerial() {
       try {
@@ -28,6 +29,7 @@ var port, textEncoder, writableStreamClosed, writer;
 
   function connected() {
     //Update UI
+    connectedFlag = true;
     document.getElementById("cmdLine").value = "";
     document.getElementById("cmdLine").placeholder = "Send data";
     document.getElementById("cmdButton").onclick = sendSerialLine;
@@ -73,12 +75,12 @@ var port, textEncoder, writableStreamClosed, writer;
   }
 
   document.getElementById("cmdLine").addEventListener("keyup", async function (event) {
+      if(!connectedFlag && event.key === 13) {
+          connectSerial();
+      }
+    
       if (event.keyCode === 13) {
           sendSerialLine();
       }
   })
-
-  document.getElementById("baud").value = (localStorage.baud == undefined ? 9600 : localStorage.baud);
-  document.getElementById("addLine").checked = (localStorage.addLine == "false" ? false : true);
-  document.getElementById("echoOn").checked = (localStorage.echoOn == "false" ? false : true); 
 

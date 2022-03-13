@@ -1,37 +1,69 @@
 * {
-    background-color: #352e2e;
-    font-family: monospace;
-    color: rgb(60, 255, 1);
+    background-color: rgb(49, 49, 49);
+    font-family: Verdana, sans-serif;
+    color: whitesmoke;
+    border-radius: 10px;
     padding: 0px;
+    margin: 0px;
 }
 
 button {
-    background-color: rgb(85, 85, 85); 
+    background-color: dimgray; 
 }
 
-#cmdButton {
+.controls {
     position: absolute;
-    bottom: 9px;
-    right: 13%
+    width: 97%;
+    height: 5%;
+    bottom: 7px;
+    right: 0px;
+    border: 5px;
+    transition-duration: 2s;
+}
+#cmdButton {
+    width: 12%;
+    height: 100%;
+    font-size: large;
+    margin-right: 10px;
+    transform: translate(-5px);
+    cursor: pointer;
+}
+
+#cmdButton:hover {
+    color: chartreuse;
 }
 
 #clearButton {
     position: absolute;
-    bottom: 9px;
-    right: 2%
+    width: 12%;
+    height: 100%;
+    font-size: large;
+    cursor: pointer;
+}
+
+#clearButton:hover {
+    color: mediumturquoise;
 }
 
 
 #cmdLine {
-    color: rgb(179, 255, 179);
-    background-color: rgb(102, 86, 86);
-    border: 1px solid;
-    border-color: #696 #363 #363 #696;
-    position: absolute;
-    bottom: 10px;
-    width:75%;
-    font-size: 150%;
+    width: 70%;
+    font-size: large;
+    height: 80%;
+    transform: translate(0, -1px);
+    color: whitesmoke;
+    background-color: dimgrey;
     text-align: right;
+    padding-right: 10px;
+    margin-right: 20px;
+}
+
+#cmdLine:hover {
+    background-color: grey;
+    
+}
+::placeholder {
+    color: whitesmoke;
 }
 
 
@@ -39,11 +71,13 @@ button {
     font-family: monospace;
     white-space: pre;
     position: absolute;
-    height: calc(100% - 120px);
-    width: calc(100% - 45px);
+    height: calc(85% - 40px);
+    width: calc(93% - 20px);
     border-style: solid;
     overflow-y: auto;
     background-color: rgb(88, 92, 92);
+    margin-left: 40px;
     padding: 10px;
-    margin: 5px;
+    font-size: large;
+
 }
