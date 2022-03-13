@@ -7,18 +7,19 @@
     <title>Web Serial</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="body">
-    <section >
+    <body>
+        
+        <br>
+        <div id="serialResults">Hello World!</div>
+        <br>
 
-    </section>
-    <footer>
-      <textarea class="writeBox" placeholder="Set baud rate" rows="1">
-      </textarea>
-      <button class="button connectButton" onclick="connect()" id="button">Connect
-      </button>
-    </footer>
-    
+        <br>
+        <input type="text" id="cmdLine" placeholder="Set Baud Rate">
+        <button id="cmdButton" onclick="connectSerial()">Connect</button>
+        <button id="clearButton" onclick="serialResultsDiv.innerHTML = '';">Clear</button>
+        <br>
 
-    <script src="index.js"></script>
-</body>
+            
+        <script src="index.js"></script>
+    </body>
 </html>
