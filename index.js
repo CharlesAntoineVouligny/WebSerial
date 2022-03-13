@@ -39,8 +39,6 @@ let connectedFlag = false;
  
   async function sendSerialLine() {
       dataToSend = document.getElementById("cmdLine").value;
-      // if (document.getElementById("addLine").checked == true) dataToSend = dataToSend + "\r\n";
-      // if (document.getElementById("echoOn").checked == true) appendToTerminal("> " + dataToSend);
       await writer.write(dataToSend);
       document.getElementById("cmdLine").value = "";
       //await writer.releaseLock();
